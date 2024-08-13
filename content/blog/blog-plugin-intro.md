@@ -63,7 +63,7 @@ pnpm i -D @blog-plugins-gjs/account
 
 而后在`nuxt.config.ts`中启用即可
 
-```ts twoslash
+```ts {10}
 export default defineNuxtConfig({
 	modules: [
     '@vueuse/nuxt',
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
     'nuxt-module-eslint-config',
     'nuxt-content-twoslash',
     '@nuxt/content',
-    '@blog-plugins-gjs/account', // [!code hl]
+    '@blog-plugins-gjs/account',
   ],
 })
 ```
