@@ -5,7 +5,7 @@ date: 2024-08-13T00:00:00.000+08:00
 
 博客使用Nuxt3框架搭建，使用Nuxt Content模块渲染和管理Markdown，文章存放于Github`gjssss/blog`仓库中。
 
-插件使用Nuxt Module编写（[仓库]([gjssss/blog-plugins (github.com)](https://github.com/gjssss/blog-plugins))）其中`main`分支为模板分支，其他插件可以由其签出编写
+插件使用Nuxt Module编写（[仓库](https://github.com/gjssss/blog-plugins)）其中`main`分支为模板分支，其他插件可以由其签出编写
 # 编写新插件
 
 ## 初始化项目
@@ -23,12 +23,13 @@ pnpm i
 ```bash
 git checkout -b my-plugin
 ```
-这样就可以在这个分支下安装你所需要的其他依赖来自定义你的插件了，下面我们不介绍具体的插件编写细节，插件的详情可以看[Nuxt官网]([Module Author Guide · Nuxt Advanced](https://nuxt.com/docs/guide/going-further/modules))
+这样就可以在这个分支下安装你所需要的其他依赖来自定义你的插件了，下面我们不介绍具体的插件编写细节，插件的详情可以看[Nuxt官网](https://nuxt.com/docs/guide/going-further/modules)
 
 ## 配置项目
 
 当插件编写完成后，我们需要发布npm包才能在博客中安装，首先你需要有一个npm的账号，具体注册方法看[NPM官网](https://www.npmjs.com/)，还需要有组织`@blog-plugins-gjs`的权限（不是必须）
 而后打开项目中`README.md`文件，可以看到一段注释，这是一段Placeholder
+
 ```markdown
 <!--
 Get your module up and running quickly.
@@ -72,7 +73,7 @@ export default defineNuxtConfig({
     'nuxt-module-eslint-config',
     'nuxt-content-twoslash',
     '@nuxt/content',
-    '@blog-plugins-gjs/account', // [!code hl]
+    '@blog-plugins-gjs/account', // highlighted
   ],
 })
 ```
