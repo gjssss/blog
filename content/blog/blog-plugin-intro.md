@@ -73,7 +73,7 @@ export default defineNuxtConfig({
     'nuxt-module-eslint-config',
     'nuxt-content-twoslash',
     '@nuxt/content',
-    '@blog-plugins-gjs/account', // highlighted
+    '@blog-plugins-gjs/account', // [!code hl]
   ],
 })
 ```
